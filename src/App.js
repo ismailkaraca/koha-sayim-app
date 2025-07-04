@@ -539,3 +539,7 @@ export default function App() {
           )}
         </div>
     );
+}
+
+// Bu satır, React uygulamasını HTML'e bağlar.
+ReactDOM.render(<App />, document.getElementById('root'));
