@@ -544,7 +544,7 @@ export default function App() {
 // Bu satırlar, React 18'e uygun şekilde uygulamayı HTML'e bağlar.
 const container = document.getElementById('root');
 // React 18'de aynı container için birden fazla createRoot çağrısını önlemek
-if (container._reactRootContainer === undefined) {  
+if (!container._reactRootContainer) {  
     const root = ReactDOM.createRoot(container);
     root.render(<App />);
 }
