@@ -539,5 +539,3 @@ export default function App() {
           )}
         </div>
     );
-}
-ReactDOM.render(<App />, document.getElementById('root'));
